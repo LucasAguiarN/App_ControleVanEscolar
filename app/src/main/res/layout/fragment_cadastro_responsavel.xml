@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".ui.responsaveis.CadastroResponsavelFragment">
+
+    <EditText
+        android:id="@+id/edit_nome_responsavel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome do Responsável" />
+
+    <EditText
+        android:id="@+id/edit_telefone_responsavel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:inputType="phone"
+        android:hint="Telefone" />
+
+    <EditText
+        android:id="@+id/edit_cpf_responsavel"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="CPF" />
+
+    <EditText
+        android:id="@+id/edit_parentesco_responsavel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Parentesco" />
+
+    <Button
+        android:id="@+id/btn_salvar_responsavel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@android:color/black"
+        android:text="Salvar"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

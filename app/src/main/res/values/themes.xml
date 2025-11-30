@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TioDaPerua" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/amarelo_van</item>
+        <item name="colorPrimaryVariant">@color/amarelo_van</item> <!-- Pode ser um tom mais escuro de amarelo -->
+        <item name="colorOnPrimary">@color/black</item> <!-- Cor do texto e ícones na barra de app -->
+        
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/fundo_amarelo</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    </style>
+</resources>

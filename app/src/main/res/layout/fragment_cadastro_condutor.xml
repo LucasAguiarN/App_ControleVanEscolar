@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".ui.condutores.CadastroCondutorFragment">
+
+    <EditText
+        android:id="@+id/edit_nome_condutor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome do Funcionário" />
+
+    <EditText
+        android:id="@+id/edit_cnh_condutor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:inputType="number"
+        android:hint="Número da CNH" />
+
+    <EditText
+        android:id="@+id/edit_cpf_condutor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:inputType="number"
+        android:hint="CPF" />
+
+    <EditText
+        android:id="@+id/edit_cargo_condutor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:inputType="text"
+        android:hint="Cargo" />
+
+    <Button
+        android:id="@+id/btn_salvar_condutor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@android:color/black"
+        android:text="Salvar"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

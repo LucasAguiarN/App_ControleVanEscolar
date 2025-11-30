@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="200dp"
+        android:textStyle="bold"
+        android:text="Aplicativo Controle de Van Escolar \ndesenvolvido por:\n\nErick Xavier Ribeiro                    RA 2403958\nJulia Lourenço Nogueira           RA 2403808\nLucas Aguiar Nunes                   RA 2403912\nMurillo Luiz Inácio de Souza    RA 2400933\nVinicius Ferreira de Freitas       RA 2403865" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/white"
+        android:text="Logout"
+        android:layout_gravity="bottom"
+        android:textColor="@android:color/black" />
+
+</FrameLayout>

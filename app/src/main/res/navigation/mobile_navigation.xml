@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.controlevanescolar.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.controlevanescolar.ui.gallery.GalleryFragment"
+        android:label="Cadastros"
+        tools:layout="@layout/fragment_gallery">
+
+        <action
+            android:id="@+id/action_nav_gallery_to_alunosFragment"
+            app:destination="@id/alunosFragment" />
+
+        <action
+            android:id="@+id/action_nav_gallery_to_responsaveisFragment"
+            app:destination="@id/responsaveisFragment" />
+        
+        <action 
+            android:id="@+id/action_nav_gallery_to_turmaFragment"
+            app:destination="@id/turmaFragment" />
+
+        <action 
+            android:id="@+id/action_nav_gallery_to_escolaFragment"
+            app:destination="@id/escolaFragment" />
+
+        <action 
+            android:id="@+id/action_nav_gallery_to_condutoresFragment"
+            app:destination="@id/condutoresFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/alunosFragment"
+        android:name="com.example.controlevanescolar.ui.alunos.AlunosFragment"
+        android:label="Alunos"
+        tools:layout="@layout/fragment_alunos">
+        <action
+            android:id="@+id/action_alunosFragment_to_cadastroAlunoFragment"
+            app:destination="@id/cadastroAlunoFragment" />
+        <action
+            android:id="@+id/action_alunosFragment_to_listaAlunosFragment"
+            app:destination="@id/listaAlunosFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/responsaveisFragment"
+        android:name="com.example.controlevanescolar.ui.responsaveis.ResponsaveisFragment"
+        android:label="Responsáveis"
+        tools:layout="@layout/fragment_responsaveis">
+        <action
+            android:id="@+id/action_responsaveisFragment_to_cadastroResponsavelFragment"
+            app:destination="@id/cadastroResponsavelFragment" />
+        <action
+            android:id="@+id/action_responsaveisFragment_to_listaResponsaveisFragment"
+            app:destination="@id/listaResponsaveisFragment" />
+    </fragment>
+        
+    <fragment
+        android:id="@+id/turmaFragment"
+        android:name="com.example.controlevanescolar.ui.turma.TurmaFragment"
+        android:label="Turmas"
+        tools:layout="@layout/fragment_turma">
+        <action
+            android:id="@+id/action_turmaFragment_to_cadastroTurmaFragment"
+            app:destination="@id/cadastroTurmaFragment" />
+        <action
+            android:id="@+id/action_turmaFragment_to_listaTurmasFragment"
+            app:destination="@id/listaTurmasFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/escolaFragment"
+        android:name="com.example.controlevanescolar.ui.escola.EscolaFragment"
+        android:label="Escolas"
+        tools:layout="@layout/fragment_escola">
+        <action
+            android:id="@+id/action_escolaFragment_to_cadastroEscolaFragment"
+            app:destination="@id/cadastroEscolaFragment" />
+        <action
+            android:id="@+id/action_escolaFragment_to_listaEscolasFragment"
+            app:destination="@id/listaEscolasFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/condutoresFragment"
+        android:name="com.example.controlevanescolar.ui.condutores.CondutoresFragment"
+        android:label="Funcionários"
+        tools:layout="@layout/fragment_condutores">
+        <action
+            android:id="@+id/action_condutoresFragment_to_cadastroCondutorFragment"
+            app:destination="@id/cadastroCondutorFragment" />
+        <action
+            android:id="@+id/action_condutoresFragment_to_listaCondutoresFragment"
+            app:destination="@id/listaCondutoresFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cadastroAlunoFragment"
+        android:name="com.example.controlevanescolar.ui.alunos.CadastroAlunoFragment"
+        android:label="Cadastrar Aluno"
+        tools:layout="@layout/fragment_cadastro_aluno" >
+        <argument
+            android:name="alunoId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/listaAlunosFragment"
+        android:name="com.example.controlevanescolar.ui.alunos.ListaAlunosFragment"
+        android:label="Lista de Alunos"
+        tools:layout="@layout/fragment_lista_alunos">
+        <action
+            android:id="@+id/action_listaAlunosFragment_to_cadastroAlunoFragment"
+            app:destination="@id/cadastroAlunoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cadastroTurmaFragment"
+        android:name="com.example.controlevanescolar.ui.turma.CadastroTurmaFragment"
+        android:label="Cadastrar Turma"
+        tools:layout="@layout/fragment_cadastro_turma" >
+        <argument
+            android:name="turmaId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/listaTurmasFragment"
+        android:name="com.example.controlevanescolar.ui.turma.ListaTurmasFragment"
+        android:label="Lista de Turmas"
+        tools:layout="@layout/fragment_lista_turmas">
+        <action
+            android:id="@+id/action_listaTurmasFragment_to_cadastroTurmaFragment"
+            app:destination="@id/cadastroTurmaFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cadastroCondutorFragment"
+        android:name="com.example.controlevanescolar.ui.condutores.CadastroCondutorFragment"
+        android:label="Cadastrar Funcionário"
+        tools:layout="@layout/fragment_cadastro_condutor" >
+        <argument
+            android:name="condutorId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/listaCondutoresFragment"
+        android:name="com.example.controlevanescolar.ui.condutores.ListaCondutoresFragment"
+        android:label="Lista de Funcionários"
+        tools:layout="@layout/fragment_lista_condutores">
+        <action
+            android:id="@+id/action_listaCondutoresFragment_to_cadastroCondutorFragment"
+            app:destination="@id/cadastroCondutorFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cadastroResponsavelFragment"
+        android:name="com.example.controlevanescolar.ui.responsaveis.CadastroResponsavelFragment"
+        android:label="Cadastrar Responsável"
+        tools:layout="@layout/fragment_cadastro_responsavel" >
+        <argument
+            android:name="responsavelId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/listaResponsaveisFragment"
+        android:name="com.example.controlevanescolar.ui.responsaveis.ListaResponsaveisFragment"
+        android:label="Lista de Responsáveis"
+        tools:layout="@layout/fragment_lista_responsaveis">
+        <action
+            android:id="@+id/action_listaResponsaveisFragment_to_cadastroResponsavelFragment"
+            app:destination="@id/cadastroResponsavelFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cadastroEscolaFragment"
+        android:name="com.example.controlevanescolar.ui.escola.CadastroEscolaFragment"
+        android:label="Cadastrar Escola"
+        tools:layout="@layout/fragment_cadastro_escola" >
+        <argument
+            android:name="escolaId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/listaEscolasFragment"
+        android:name="com.example.controlevanescolar.ui.escola.ListaEscolasFragment"
+        android:label="Lista de Escolas"
+        tools:layout="@layout/fragment_lista_escolas">
+        <action
+            android:id="@+id/action_listaEscolasFragment_to_cadastroEscolaFragment"
+            app:destination="@id/cadastroEscolaFragment" />
+    </fragment>
+
+</navigation>

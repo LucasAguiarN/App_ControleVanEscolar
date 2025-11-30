@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.controlevanescolar">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="Controle Van Escolar"
+        android:roundIcon="@drawable/app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TioDaPerua">
+        <activity
+            android:name="com.example.controlevanescolar.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.controlevanescolar.CadastroActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.controlevanescolar.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AlunosActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:context=".ui.escola.CadastroEscolaFragment">
+
+        <EditText
+            android:id="@+id/edit_nome_escola"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome da Escola" />
+
+        <EditText
+            android:id="@+id/edit_endereco_escola"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Endereço" />
+
+        <EditText
+            android:id="@+id/edit_telefone_escola"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:inputType="phone"
+            android:hint="Telefone" />
+
+        <EditText
+            android:id="@+id/edit_cep_escola"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginTop="8dp"
+            android:hint="CEP" />
+
+        <Button
+            android:id="@+id/btn_salvar_escola"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@android:color/black"
+            android:text="Salvar"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>
