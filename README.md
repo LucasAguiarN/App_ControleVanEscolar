@@ -12,19 +12,22 @@
 
 ![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)
 ![Android Studio](https://img.shields.io/badge/android%20studio-346ac1?style=for-the-badge&logo=android%20studio&logoColor=white)
+![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
 
 <p align="center">
     <a href="#sobre">Sobre</a> • 
     <a href="#grupo">Integrantes do Grupo</a> •
+    <a href="#requisitos">Requisitos</a> •
     <a href="#interface">Interface</a> •
     <a href="#how-it-works">Funcionalidades</a> • 
     <a href="#licença">Licença</a>
 </p>
 
 <h2 id="sobre">📖 Sobre</h2>
-App referente a Avaliação Final da disciplina Desenvolvimento Mobile, ministrada pelo professor Odair Gabriel da Silva na Faculdade Impacta, durante o terceiro semestre do curso Análise e Desenvolvimento de Sistemas cursado no 2º Semestre de 2025.
-<br><br>
+App referente a Avaliação Final da disciplina Desenvolvimento Mobile, ministrada pelo professor Odair Gabriel da Silva na Faculdade Impacta, durante o terceiro semestre do curso Análise e Desenvolvimento de Sistemas cursado no 2º Semestre de 2025.<br>
+<br>O aplicativo "Controle Van Escolar" foi desenvolvido como uma solução de gerenciamento para profissionais autônomos que atuam no setor de transporte escolar. A principal motivação para sua criação é a necessidade de substituir métodos manuais e descentralizados de controle como cadernos, planilhas ou aplicativos de mensagem por uma ferramenta digital, centralizada e segura. O objetivo do projeto é oferecer ao condutor um sistema prático e eficiente para gerenciar todas as informações essenciais ao seu trabalho, como dados de alunos, seus responsáveis, escolas atendidas e as diferentes turmas.<br>
 
+<br>Para o armazenamento persistente dos dados, o aplicativo utiliza o banco de dados SQLite, que é nativo do sistema operacional Android via biblioteca ROOM.
 <br>
 
 <h2 id="grupo">👥 Integrantes do Grupo</h2>
@@ -63,6 +66,9 @@ App referente a Avaliação Final da disciplina Desenvolvimento Mobile, ministra
   </tr>
 </table>
 
+<h2 id="requisitos">📦 Requisitos</h2>
+Para rodar o Aplicativo no Celular com sistema Android ou num Emulador Android baixar: <br><a href="./ControleVanEscolar.apk">ControleVanEscolar.apk</a>
+
 <h2 id="interface">🖥️ Interface</h2>
 <p align="center">✦ Icone<br><img src="Imagens/app_logo.png" alt="Icone" width="200px"><br></p>
 <p align="center">✦ Home<br><img src="Imagens/tela home.png" alt="Home" width="200px"><br></p>
@@ -89,7 +95,12 @@ App referente a Avaliação Final da disciplina Desenvolvimento Mobile, ministra
 <a href="app/src/main/res/layout">Códigos XMLs</a><br></p>
 
 <h2 id="how-it-works">⚙️ Funcionalidades</h2>
-
+🔹 Login, Cadastro de Usuário e Logout<br>
+🔹 CRUD de Alunos (Cadastro, Listagem, Atualização e Exclusão)<br>
+🔹 CRUD de Responsáveis (Cadastro, Listagem, Atualização e Exclusão)<br>
+🔹 CRUD de Turmas (Cadastro, Listagem, Atualização e Exclusão)<br>
+🔹 CRUD de Escolas (Cadastro, Listagem, Atualização e Exclusão)<br>
+🔹 CRUD de Funcionários (Cadastro, Listagem, Atualização e Exclusão)<br>
 
 <h2 id="licença">📜 Licença</h2>
 Este projeto é para fins educacionais e está disponível sob a <a href="./LICENSE">Licença MIT.</a>
