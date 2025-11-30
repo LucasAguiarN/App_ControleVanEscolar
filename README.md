@@ -64,7 +64,29 @@ App referente a Avaliação Final da disciplina Desenvolvimento Mobile, ministra
 </table>
 
 <h2 id="interface">🖥️ Interface</h2>
+<p align="center">✦ Icone<br><img src="Imagens/app_logo.png" alt="Icone" width="200px"><br></p>
+<p align="center">✦ Home<br><img src="Imagens/tela home.png" alt="Home" width="200px"><br></p>
+<p align="center">✦ Cadastrar<br><img src="Imagens/tela cadastro usuario.png" alt="Cadastrar" width="200px"><br></p>
+<p align="center">✦ Home Logada<br><img src="Imagens/tela home logada.png" alt="Home Logada" width="200px"><br></p>
+<p align="center">✦ Navegador<br><img src="Imagens/navegador.png" alt="Navegador" width="200px"><br></p>
+<p align="center">✦ Cadastros<br><img src="Imagens/tela cadastros.png" alt="Cadastros" width="200px"><br></p>
+<p align="center">✦ Alunos<br><img src="Imagens/tela alunos.png" alt="Aluno" width="200px"><br></p>
+<p align="center">✦ Cadastro Aluno<br><img src="Imagens/tela cadastro aluno.png" alt="Cadastro Aluno" width="200px"><br></p>
+<p align="center">✦ Lista Alunos<br><img src="Imagens/tela lista alunos.png" alt="Lista Alunos" width="200px"><br></p>
+<p align="center">✦ Responsáveis<br><img src="Imagens/tela responsaveis.png" alt="Responsável" width="200px"><br></p>
+<p align="center">✦ Cadastro Responsável<br><img src="Imagens/tela cadastro responsavel.png" alt="Cadastro Responsável" width="200px"><br></p>
+<p align="center">✦ Lista Responsáveis<br><img src="Imagens/tela lista responsaveis.png" alt="Lista Responsáveis" width="200px"><br></p>
+<p align="center">✦ Turmas<br><img src="Imagens/tela turmas.png" alt="Turmas" width="200px"><br></p>
+<p align="center">✦ Cadastro Turma<br><img src="Imagens/tela cadastro turma.png" alt="Cadastro Turma" width="200px"><br></p>
+<p align="center">✦ Lista Turmas<br><img src="Imagens/tela lista turmas.png" alt="Lista Turmas" width="200px"><br></p>
+<p align="center">✦ Escolas<br><img src="Imagens/tela escolas.png" alt="Escolas" width="200px"><br></p>
+<p align="center">✦ Cadastro Escola<br><img src="Imagens/tela cadastro escola.png" alt="Cadastro Escola" width="200px"><br></p>
+<p align="center">✦ Lista Escolas<br><img src="Imagens/tela lista escolas.png" alt="Lista Escolas" width="200px"><br></p>
+<p align="center">✦ Funcionários<br><img src="Imagens/tela funcionarios.png" alt="Funcionários" width="200px"><br></p>
+<p align="center">✦ Cadastro Funcionário<br><img src="Imagens/tela cadastro funcionario.png" alt="Cadastro Funcionário" width="200px"><br></p>
+<p align="center">✦ Lista Funcionários<br><img src="Imagens/tela lista funcionarios.png" alt="Lista Funcionários" width="200px"><br></p>
 
+<a href="app/src/main/res/layout">Códigos XMLs</a><br></p>
 
 <h2 id="how-it-works">⚙️ Funcionalidades</h2>
 
