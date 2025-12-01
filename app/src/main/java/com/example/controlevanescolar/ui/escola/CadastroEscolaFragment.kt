@@ -1,6 +1,8 @@
 package com.example.controlevanescolar.ui.escola
 
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,9 +10,14 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.example.controlevanescolar.api.RetrofitClient
 import com.example.controlevanescolar.dao.EscolaDAO
 import com.example.controlevanescolar.databinding.FragmentCadastroEscolaBinding
+import com.example.controlevanescolar.model.Endereco
 import com.example.controlevanescolar.model.Escola
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class CadastroEscolaFragment : Fragment() {
 
@@ -47,6 +54,43 @@ class CadastroEscolaFragment : Fragment() {
         binding.btnSalvarEscola.setOnClickListener {
             salvarEscola()
         }
+
+        binding.editCepEscola.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                if (s?.length == 8) {
+                    buscarEnderecoPorCep(s.toString())
+                }
+            }
+
+            override fun afterTextChanged(s: Editable?) {}
+        })
+    }
+
+    private fun buscarEnderecoPorCep(cep: String) {
+        RetrofitClient.instance.getEndereco(cep).enqueue(object : Callback<Endereco> {
+            override fun onResponse(call: Call<Endereco>, response: Response<Endereco>) {
+                if (response.isSuccessful) {
+                    val endereco = response.body()
+                    if (endereco != null && endereco.erro != true) {
+                        val logradouro = endereco.logradouro ?: ""
+                        val bairro = endereco.bairro ?: ""
+                        val localidade = endereco.localidade ?: ""
+                        val uf = endereco.uf ?: ""
+                        binding.editEnderecoEscola.setText("$logradouro, $bairro - $localidade/$uf")
+                    } else {
+                        Toast.makeText(requireContext(), "CEP não encontrado.", Toast.LENGTH_SHORT).show()
+                    }
+                } else {
+                    Toast.makeText(requireContext(), "CEP não encontrado.", Toast.LENGTH_SHORT).show()
+                }
+            }
+
+            override fun onFailure(call: Call<Endereco>, t: Throwable) {
+                Toast.makeText(requireContext(), "Falha ao buscar CEP.", Toast.LENGTH_SHORT).show()
+            }
+        })
     }
 
     private fun loadEscolaData() {
